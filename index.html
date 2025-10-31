@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#4f46e5" />
+  <title>Diário de Bordo</title>
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="icon" href="/icons/icon-192.png" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Diário de Bordo</h1>
+      <button id="btnInstall" class="hidden">Instalar</button>
+    </header>
+    <section class="form-section">
+      <form id="entryForm">
+        <label>Título <input id="title" type="text" placeholder="Título da entrada" required /></label>
+        <label>Data <input id="date" type="date" required /></label>
+        <label>Descrição <textarea id="description" rows="4" placeholder="O que aconteceu hoje?" required></textarea></label>
+        <div class="form-actions">
+          <button type="submit">Adicionar</button>
+          <button type="button" id="clearBtn" class="secondary">Limpar</button>
+        </div>
+      </form>
+    </section>
+    <section class="list-section">
+      <h2>Entradas</h2>
+      <ul id="entriesList" class="entries"></ul>
+    </section>
+    <footer><small>Funciona offline • PWA • Salvo no localStorage</small></footer>
+  </main>
+  <script src="/script.js"></script>
+</body>
+</html>
