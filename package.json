@@ -1,0 +1,20 @@
+{
+  "name": "diario-de-bordo",
+  "version": "1.0.0",
+  "description": "PWA Diário de Bordo — app estático com service worker e manifest",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve -s . -l 3000",
+    "preview": "serve -s . -l 5000"
+  },
+  "keywords": [
+    "pwa",
+    "diario",
+    "diario-de-bordo"
+  ],
+  "author": "Priss",
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^14.2.0"
+  }
+}
